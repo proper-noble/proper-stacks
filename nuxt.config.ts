@@ -19,4 +19,8 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
+
+  nitro: {
+    preset: process.env.NITRO_PRESET || (process.env.NETLIFY ? 'netlify' : 'node-server'),
+  },
 })

@@ -37,6 +37,26 @@ pnpm build
 
 ## Deploy
 
+### Netlify
+
+Deploy your application to Netlify with automatic builds from your git repository:
+
+1. **Connect Repository**: Connect your GitHub repository to Netlify
+2. **Configure Build Settings**: Netlify will automatically detect the build settings from `netlify.toml`
+3. **Set Environment Variables** (if needed for external services):
+   - For databases: Consider using [Turso](https://turso.tech/) with `@libsql/client` (already installed)
+   - For blob storage: Consider using [Uploadcare](https://uploadcare.com/) or another blob storage provider
+   - For KV storage: Consider using [Upstash Redis](https://upstash.com/) (already installed) or Netlify Blobs
+   - For caching: Use Netlify's built-in caching capabilities
+
+You can also deploy manually using the Netlify CLI:
+
+```bash
+npm run deploy-netlify
+```
+
+**Note**: This application uses NuxtHub features (`hub:blob`, `hub:db`, `hub:kv`, `hub:cache`) which are optimized for Cloudflare and Vercel. When deploying to Netlify, you may need to configure alternative storage providers or use Netlify's equivalent services.
+
 ### Vercel
 
 On the Vercel dashboard -> Storage, create a Turso SQLite database, Redis database, and Vercel Blob store
