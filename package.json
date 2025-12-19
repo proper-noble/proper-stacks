@@ -7,6 +7,7 @@
     "build": "nuxt build",
     "deploy-cloudflare": "NITRO_PRESET=cloudflare_module npm run build && npx wrangler deploy && npx wrangler d1 migrations apply DB --remote",
     "deploy-vercel": "npx vercel deploy",
+    "deploy-netlify": "npm run build && npx netlify deploy --prod",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "typecheck": "nuxt typecheck"
