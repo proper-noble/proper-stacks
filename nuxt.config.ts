@@ -7,6 +7,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: '2025-12-11',
 
+  nitro: {
+    preset: process.env.NITRO_PRESET || (process.env.NETLIFY ? 'netlify' : 'node-server'),
+  },
+
   hub: {
     db: 'sqlite',
     kv: true,
@@ -18,9 +22,5 @@ export default defineNuxtConfig({
     config: {
       stylistic: true,
     },
-  },
-
-  nitro: {
-    preset: process.env.NITRO_PRESET || (process.env.NETLIFY ? 'netlify' : 'node-server'),
   },
 })
