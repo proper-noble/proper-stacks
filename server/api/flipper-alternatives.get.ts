@@ -148,7 +148,7 @@ export default defineEventHandler(async () => {
     {
       name: 'cosmob1',
       owner: 'gabrielesuardi',
-      description: 'cosmo b1 is the brand new alternative to flipper zero, chepaer, and with a new method of interface',
+      description: 'cosmo b1 is the brand new alternative to flipper zero, cheaper, and with a new method of interface',
       stars: 0,
       language: 'HTML',
       url: 'https://github.com/gabrielesuardi/cosmob1',
