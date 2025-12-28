@@ -163,6 +163,15 @@ export default defineEventHandler(async () => {
       url: 'https://github.com/ayberkarslan/starlog',
       topics: ['cpp', 'esp32', 'flipper-zero', 'pentest-tool', 'state-machine', 'wifi-beaconpacket', 'wifi-deauther'],
     },
+    {
+      name: 'isZeroBro',
+      owner: 'proper-noble',
+      description: 'STM32F4-based Flipper Zero alternative - Hardware port and firmware development tracking',
+      stars: 0,
+      language: 'C',
+      url: 'https://github.com/proper-noble/isZeroBro',
+      topics: ['stm32f4', 'flipper-zero', 'hardware', 'firmware', 'embedded'],
+    },
   ]
 
   return {
