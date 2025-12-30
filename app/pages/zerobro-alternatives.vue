@@ -322,12 +322,13 @@ h1 {
   line-height: 1.5;
 }
 
-.alternative ul li:before {
+.alternative ul li::before {
   content: "→";
   position: absolute;
   left: 0;
   color: #667eea;
   font-weight: bold;
+  aria-hidden: true;
 }
 
 .topics {
